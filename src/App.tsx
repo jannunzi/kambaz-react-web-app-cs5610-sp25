@@ -1,11 +1,5 @@
 import Labs from "./Labs";
-import {
-  BrowserRouter,
-  HashRouter,
-  Route,
-  Routes,
-  Navigate,
-} from "react-router";
+import { HashRouter, Route, Routes, Navigate } from "react-router";
 function App() {
   return (
     <HashRouter>
