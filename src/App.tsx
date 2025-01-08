@@ -1,5 +1,23 @@
+import Labs from "./Labs";
+import {
+  BrowserRouter,
+  HashRouter,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router";
 function App() {
-  return <h1>Welcome to Full Stack MERN Web Applications</h1>;
+  return (
+    <HashRouter>
+      <div>
+        <Routes>
+          {/* <Route path="/" element={<Labs />} /> */}
+          <Route path="/" element={<Navigate to="/Labs" />} />
+          <Route path="/Labs/*" element={<Labs />} />
+        </Routes>
+      </div>
+    </HashRouter>
+  );
 }
 
 export default App;
