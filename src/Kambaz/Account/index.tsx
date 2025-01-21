@@ -15,10 +15,10 @@ export default function Account() {
           </td>
           <td>
             <Routes>
-              {/* <Route
+              <Route
                 path="/"
                 element={<Navigate to="/Kambaz/Account/Signin" />}
-              /> */}
+              />
               <Route path="Signin" element={<Signin />} />
               <Route path="Signup" element={<Signup />} />
               <Route path="Profile" element={<Profile />} />
