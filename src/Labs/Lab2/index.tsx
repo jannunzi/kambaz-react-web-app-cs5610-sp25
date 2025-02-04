@@ -1,6 +1,11 @@
+import { Container } from "react-bootstrap";
+import BootstrapGrid from "./BootstrapGrids";
+
 export default function Lab2() {
   return (
-    <div id="wd-lab2">
+    <Container fluid id="wd-lab2">
+      <BootstrapGrid />
+      <hr />
       <h2 className="wd-class-selector">Lab 2 - Cascading Style Sheets</h2>
       <h3>Styling with the STYLE attribute</h3>
       <p>
@@ -101,6 +106,6 @@ export default function Lab2() {
           <div className="wd-bg-color-red wd-dimension-square">Square</div>
         </div>
       </div>
-    </div>
+    </Container>
   );
 }
